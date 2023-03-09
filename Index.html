@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./T1.css">
+  </head>
+  <body>
+    <!-- Flex Main Container  -->
+    <div id="container">
+      <span id="Time"></span>
+      <!-- Time Display ID  -->
+
+      <!-- Setting Alarm Time  -->
+      <div id="set_Time_container">
+        <div class='alarm_Input'>
+          <input  type="text" maxlength="2"> :
+          <input  type="text"  maxlength="2"> :
+          <input  type="text"  maxlength="2">
+          <select id="Time_selector">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+        <input class='button' type="submit" value="Set Alarm">
+      </div>
+
+      <!-- Adding Queue Elements inside the ID  -->
+      <div id="result">
+        <h5>Alarms</h5>
+        <div id="display_Alarms_Container">
+          <!-- Styling Alarm Queue Elements -->
+        </div>
+        
+      </div>
+      
+    </div>
+  </body>
+</html>
