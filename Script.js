@@ -81,7 +81,7 @@ function result(){
 		
 		// Checking if user has left any input without a Proper value 
 		
-		if(H==undefined || M==undefined || S==undefined || H>12 || M>59 || S>59){
+		if((H==undefined || M==undefined || S==undefined || H>12 || M>59 || S>59) || ( parseInt(H).toString()=='NaN' || parseInt(M).toString()=='NaN' || parseInt(S).toString()=='NaN')){
 		  alert("Enter the Correct value and use Tab to move to Next field");
 		  return;
 		}
