@@ -10,7 +10,7 @@ function Curr_Time()
 	T=new Date().toString().split(' ')[4];
 	var H=T.split(':');
 	if( H[0] >12){
-		if(H[0]<10)
+		if((parseInt(H[0])-12)<10)
 			H[0]="0"+(parseInt(H[0])-12).toString();
 		else
 			H[0]=(parseInt(H[0])-12).toString();
@@ -98,6 +98,7 @@ function result(){
 			let d = new Date();
 			B.setAttribute('id',d.getTime().toString());
 			B.setAttribute('type','button');
+			B.setAttribute('style','background-color:black; color:white');
 			B.setAttribute('value','Delete');
 			para.appendChild(text);
 			div.appendChild(para);
