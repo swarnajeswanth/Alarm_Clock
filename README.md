@@ -10,7 +10,7 @@ Instructions to Use:
   2.  we have already Linked  CSS & JS Files in HTML . If you have saved any files with Different Name . Do checkout it HTML once and do the relavent changes
   3.  Once All the Changes are done you should see a similar snap shot as below
   
-  ![image](https://user-images.githubusercontent.com/41503134/224172492-39b168ca-b2df-4d93-b00d-505523eed54f.png)
+  ![image](https://user-images.githubusercontent.com/41503134/224939402-2e5e79b4-eb14-4482-aeb2-be76605142f0.png)
   
   Project Description:
   
