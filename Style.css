@@ -20,6 +20,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  background-color: rgb(52, 235, 177);
 }
 #container > *{
   margin-top: 5%;
@@ -40,40 +41,58 @@ body{
   width:75%;
 }
 #set_Time_container select{
-  width:18%;
+  width:11%;
   font-size: 98%;
   letter-spacing: 0.5px;
-  margin-left: 1px;
+  margin-left: 3px;
   font-weight: 550;
   border-radius: 5px;
   border-color: rgb(81, 79, 79);
+  appearance: none;
+  box-shadow: 1px 1px 1px 0.5px rgb(131, 118, 118) ;
+  outline-color: transparent;
+  background-color: inherit;
+}
+#set_Time_container select:focus{
+  background-color: white;
 }
 .alarm_Input{
   align-self: center;
   display:flex;
 }
 .alarm_Input > input {
-  /* margin-left: -3%; */
-  border-color: rgb(228, 228, 228);
+  margin-left: 1%;
+  border-color:transparent;
   border-radius: 5px;
-  width:18%;
   font-size: 98%;
   font-weight: 550;
-  width:12%;
-  box-shadow: 2px 2px 1px 1px lightgrey ;
+  width:8%;
+  box-shadow: -1px 1px 1px 1px rgb(131, 118, 118) ;
+  outline: unset;
+  background-color: inherit;
 }
 
+.alarm_Input > input:focus{
+  background-color: white;
+}
 
 /* Adding Alarm to Queue */
 .button{
   background-color: white;
-  border:1px solid black;
   align-self: center;
   height: 55%;
   font-weight: 550;
   font-size: 87.5%;
-  box-shadow: 2px 2px 2px 1px lightgrey ;
+  box-shadow: -1px 1px 2px 1px rgb(131, 118, 118) ;
+  outline:transparent;
+  transition: background 1s ease , color 0.5 ease-in;
+  background-color: inherit;
+  border-radius: 10px;
+}
 
+.button:hover{
+  background-color:black;
+  color:white;
 }
 
 /* Displaying Alarm Queue Container */
@@ -108,12 +127,7 @@ body{
   justify-content: space-between;
 }
 
-select{
-  appearance: none;
-  /* width:13px; */
-   box-shadow: 2px 2px 2px 1px lightgrey ;
 
-}
 
 
 /* Styling Alarm Queue Elements */
@@ -124,8 +138,26 @@ select{
   transition: box-shadow 0.5s ease;
 }
 .del:hover >P {
-  box-shadow: 0 0 6px 1.5px lightgrey ;
+  box-shadow: 0 0 10px 2px rgb(68, 57, 57) ;
 }
 .del > input{
   align-self: center;
+  box-shadow: -1px 1px 2px 1px rgb(131, 118, 118) ;
+  border-radius: 10px;
+  transition: color 0.5s ease;
 }
+
+@media screen and ( max-width: 600px) {
+
+  #container{
+    width:90%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+
+  #container{
+    width:50%;
+  }
+} 
+
